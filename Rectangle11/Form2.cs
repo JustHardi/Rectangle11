@@ -11,27 +11,36 @@ using System.Windows.Forms;
 namespace Rectangle11
 {
     public partial class Form2 : Form
-    {
-        public Form2()
-        {
-            InitializeComponent();
-            pictureBox1.Image = Image.FromFile("milk.png");
-        }
+    {        
         public Form2(Form1 f)
         {
             InitializeComponent();
             f.BackColor = Color.Yellow;
-            pictureBox1.Image = Image.FromFile("milk.png");
-        }
-        public void ss2(StringBuilder sb)
+            pictureBox1.Image = Image.FromFile(@"../../Images/milk.png");
+            this.textBox1.Text = "Error";
+        }      
+
+        public void ShowEquipmentDetails(Equipments scheme)
         {
-            // = sb.ToString();
+            if (scheme != null)
+            {
+                this.pictureBox1.Image = Image.FromFile(@"../../Images/" + scheme.ImageName + ".png");
+                this.textBox1.Text = scheme != null ? scheme.ToString() : "Hello";
+            }
+            this.Show();
+            
+        }
+
+        public void ShowPoductDetails(Product product)
+        {
+            if (product != null)
+            {
+                this.pictureBox1.Image = Image.FromFile(@"../../Images/" + product.ImageName + ".png");
+                this.textBox1.Text = product != null ? product.ToString() : "Hello";
+            }
+            this.Show();
 
         }
-
-        public void ShowXapak(Scheme scheme)
-        {
-            this.Show();   
-        }
+        
     }
 }

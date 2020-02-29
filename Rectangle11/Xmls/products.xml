@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <products>
-  <product type = "milk" name="pasteurized milk" fat ="2.8%">
-    <semifinished>1010.6</semifinished>
-    <milk_fat fat ="3.6">782.9</milk_fat>
-    <milk_nofat>227.7</milk_nofat>
+  <product type = "Milk" name="pasteurized milk" fat ="2.8%">
+    <semifinished>1010,6</semifinished>
+    <milk_base fat ="3.6">782,9</milk_base>
+    <milk_nofat>227,7</milk_nofat>
+    <image_name>milk</image_name>
   </product>
 </products>
