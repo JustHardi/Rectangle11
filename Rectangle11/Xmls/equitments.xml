@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipments>
+    <scales name="CMK-2"></scales>
+    <MaxPower>25000 кг/ч</MaxPower>
+    <MinPower>2000 кг/ч</MinPower>
+    <capacity>170 л</capacity>
+    <accuracy>0.1%</accuracy>
+    <mains_power>220 B</mains_power>
+</equipments>

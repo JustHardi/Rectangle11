@@ -121,5 +121,8 @@
     <Content Include="SharpGL.ico" />
     <Content Include="SharpGL.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Xmls\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
