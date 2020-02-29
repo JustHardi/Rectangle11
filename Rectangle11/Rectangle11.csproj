@@ -120,9 +120,9 @@
   <ItemGroup>
     <Content Include="SharpGL.ico" />
     <Content Include="SharpGL.png" />
+    <Content Include="Xmls\equitments.xml" />
+    <Content Include="Xmls\products.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Xmls\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
