@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<milk_products>
-    <milk name="pasteurized milk 2.8%">
-          <semifinished>1010.6</semifinished>
-          <milk_fat_3_6>782.9</milk_fat_3_6>
-          <milk_nofat>227.7</milk_nofat>
-    </milk>
-    <milk name="pasteurized milk 3.3%">
-          <semifinished>1010.6</semifinished>
-          <milk_fat_3_6>925.2</milk_fat_3_6>
-          <milk_nofat>85.4</milk_nofat>
-    </milk>
-    <kefir name="kefir 3.2%">
-          <semifinished>1013.0</semifinished>
-          <milk_fat_3_6>898.9</milk_fat_3_6>
-          <milk_nofat>114.1</milk_nofat>
-    </kefir>
-    <kefir name="kefir 2.8%">
-          <semifinished>1011.3</semifinished>
-          <milk_fat_3_6>783.4</milk_fat_3_6>
-          <milk_nofat>227.9</milk_nofat>
-    </kefir>
-</milk_products>
+<products>
+  <product type = "milk" name="pasteurized milk" fat ="2.8%">
+    <semifinished>1010.6</semifinished>
+    <milk_fat fat ="3.6">782.9</milk_fat>
+    <milk_nofat>227.7</milk_nofat>
+  </product>
+</products>
