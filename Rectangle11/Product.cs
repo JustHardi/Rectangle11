@@ -11,7 +11,9 @@ namespace Rectangle11
         public ProductTypes ProductType { get; set; }
         public string Name { get; set; }
         public string Fat { get; set; }
-        public double Semifinished { get; set; }
+        public double normalizedMixture { get; set; }
+        public string MixtureName { get; set; }
+        public string MixtureFat { get; set; }
         public double MilkBaseValue { get; set; }
         public double MilkNofatValue { get; set; }
         public string MilkBaseFat { get; set; }
@@ -23,13 +25,40 @@ namespace Rectangle11
 
             if (!String.IsNullOrEmpty(Name))
             {
-                sb.AppendLine("Наименование:" + Name);
+                sb.Append("Наименование: " + Name);
             }
 
             if (!String.IsNullOrEmpty(Fat))
             {
-                sb.AppendLine("Фат:" + Fat + "%");
+                sb.AppendLine(", Жирность: " + Fat + "%");
             }
+
+            if ((normalizedMixture)!=0)
+            {
+                sb.AppendLine("Нормализованная смесь: " + normalizedMixture + "кг");
+            }
+
+            if (!String.IsNullOrEmpty(MixtureName))
+            {
+                sb.AppendLine("Наименование: " + MixtureName);
+            }
+
+            if (!String.IsNullOrEmpty(MixtureFat))
+            {
+                sb.AppendLine("Жирность: " + MixtureFat + "%");
+            }
+
+            if ((MilkBaseValue) != 0)
+            {
+                sb.AppendLine("Молоко базисной жирности: " + MilkBaseValue + "кг");
+            }
+
+            if (!String.IsNullOrEmpty(MilkBaseFat))
+            {
+                sb.AppendLine("Жирность: " + MilkBaseFat + "%");
+            }
+
+            
 
             return sb.ToString();
         }

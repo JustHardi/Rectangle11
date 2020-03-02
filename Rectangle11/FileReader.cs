@@ -10,7 +10,7 @@ namespace Rectangle11
     public static class FileReader
     {
 
-        public static List<Equipments> GetEquipments()
+        public static List<Equipments> GetEquipments() //считывание файла оборудования xml
         {
             List<Equipments> equipments = new List<Equipments>();
 
@@ -28,10 +28,60 @@ namespace Rectangle11
                     {
                         equipment.Type = childnode.InnerText;
                     }
+                    if (childnode.Name == "name")
+                    {
+                        equipment.Name = childnode.InnerText;
+                    }
                     if (childnode.Name == "ImageName")
                     {
                         equipment.ImageName = childnode.InnerText;
                     }
+
+                    if (childnode.Name == "Volume")
+                    {
+                        equipment.Volume = Double.Parse(childnode.InnerText);
+                    }
+                    if (childnode.Name == "Plotn")
+                    {
+                        equipment.Plotn = Double.Parse(childnode.InnerText);
+                    }
+                    if (childnode.Name == "Mass")
+                    {
+                        equipment.Mass = Double.Parse(childnode.InnerText);
+                    }
+                    if (childnode.Name == "Power")
+                    {
+                        equipment.Power = Double.Parse(childnode.InnerText);
+                    }
+                    if (childnode.Name == "Coeff")
+                    {
+                        equipment.Coeff = Double.Parse(childnode.InnerText);
+                    }
+                    if (childnode.Name == "a")
+                    {
+                        equipment.a = Double.Parse(childnode.InnerText);
+                    }
+                    if (childnode.Name == "Temperature")
+                    {
+                        equipment.Temperature = Double.Parse(childnode.InnerText);
+                    }
+                    if (childnode.Name == "Storage")
+                    {
+                        equipment.Storage = Double.Parse(childnode.InnerText);
+                    }
+                    if (childnode.Name == "Performance")
+                    {
+                        equipment.Performance = Double.Parse(childnode.InnerText);
+                    }
+                    if (childnode.Name == "Delay")
+                    {
+                        equipment.Delay = Double.Parse(childnode.InnerText);
+                    }
+
+
+
+
+
                 }
                 equipments.Add(equipment);
             }
@@ -39,8 +89,10 @@ namespace Rectangle11
             return equipments;
         }
 
-        public static Product GetProduct()
+
+        public static Product GetProduct() //считывание файла products xml
         {
+            
             Product product = new Product();
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load(@"../../Xmls/products.xml");
@@ -84,18 +136,28 @@ namespace Rectangle11
 
                 XmlNode fat = xnode.Attributes.GetNamedItem("fat");
                 if (fat == null)
-                    return null;
+                    return null;               
 
                 product.Fat = fat.Value;
 
 
                 foreach (XmlNode childnode in xnode.ChildNodes)
                 {
-                    if (childnode.Name == "semifinished")
+                    if (childnode.Name == "normalizedMixture")
                     {
-                        product.Semifinished = Double.Parse(childnode.InnerText);
+                        product.normalizedMixture = Double.Parse(childnode.InnerText);
+
+                        XmlNode mixName = childnode.Attributes.GetNamedItem("name");
+                        if (mixName != null)                            
+                        product.MixtureName = mixName.Value;
+
+
+                        XmlNode mixFat = childnode.Attributes.GetNamedItem("fat");
+                        if (mixFat != null)
+                        product.MixtureFat = mixFat.Value;
+
                     }
-                    if (childnode.Name == "milk_fat")
+                    if (childnode.Name == "milk_base")
                     {
                         product.MilkBaseValue = Double.Parse(childnode.InnerText);
 

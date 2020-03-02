@@ -15,8 +15,8 @@ namespace Rectangle11
         public Form2(Form1 f)
         {
             InitializeComponent();
-            f.BackColor = Color.Yellow;
-            pictureBox1.Image = Image.FromFile(@"../../Images/milk.png");
+            //f.BackColor = Color.Yellow;
+            pictureBox1.Image = Image.FromFile(@"../../Images/notfound.png");
             this.textBox1.Text = "Error";
         }      
 
