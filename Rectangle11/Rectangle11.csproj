@@ -129,17 +129,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\fasov_galdi_rg250.png" />
+    <Content Include="Images\fasov_galdi_rg250.jpg" />
     <Content Include="Images\fasov_milk6000.png" />
-    <Content Include="Images\homogenizator.png" />
+    <Content Include="Images\homogenizator.jpg" />
     <Content Include="Images\milk.png" />
-    <Content Include="Images\milkpacket.png" />
-    <Content Include="Images\nasos.png" />
-    <Content Include="Images\notfound.png" />
-    <Content Include="Images\separator.png" />
-    <Content Include="Images\separator1.png" />
-    <Content Include="Images\деаэратор.png" />
-    <Content Include="Images\резервуар B2-oxp-50.png" />
+    <Content Include="Images\separator.jpg" />
+    <Content Include="Images\separator1.jpg" />
+    <Content Include="Images\деаэратор.jpg" />
+    <Content Include="Images\резервуар B2-oxp-50.jpg" />
     <Content Include="SharpGL.ico" />
     <Content Include="SharpGL.png" />
     <Content Include="Xmls\equitments.xml" />

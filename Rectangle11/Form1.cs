@@ -28,7 +28,7 @@ namespace Rectangle11
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
             pictureBox1.Refresh();            
-            if (e.Location.X >= 5 && e.Location.Y >= 270 && e.Location.X <= 180 && e.Location.Y <= 490) //x+30 машина
+            if (e.Location.X >= 5 && e.Location.Y >= 300 && e.Location.X <= 180 && e.Location.Y <= 470) //x+30 машина
             {           
                 if (e.Button == MouseButtons.Left && IsShowDetails == false)
                 {
@@ -40,7 +40,7 @@ namespace Rectangle11
                 }
             }
 
-            if (e.Location.X >= 181 && e.Location.Y >= 270 && e.Location.X <= 216 && e.Location.Y <= 490)//насос
+            if (e.Location.X >= 181 && e.Location.Y >= 300 && e.Location.X <= 216 && e.Location.Y <= 470)//насос
             {
                 if (e.Button == MouseButtons.Left && IsShowDetails == false)
                 {                    
@@ -50,7 +50,7 @@ namespace Rectangle11
                     IsShowDetails = true;
                 }
             }
-            if (e.Location.X >= 217 && e.Location.Y >= 270 && e.Location.X <= 257 && e.Location.Y <= 490)//весы
+            if (e.Location.X >= 217 && e.Location.Y >= 300 && e.Location.X <= 257 && e.Location.Y <= 470)//весы
             {
                 if (e.Button == MouseButtons.Left && IsShowDetails == false)
                 {
@@ -60,7 +60,7 @@ namespace Rectangle11
                     IsShowDetails = true;
                 }
             }
-            if (e.Location.X >= 258 && e.Location.Y >= 270 && e.Location.X <= 353 && e.Location.Y <= 490)//охладитель
+            if (e.Location.X >= 258 && e.Location.Y >= 300 && e.Location.X <= 353 && e.Location.Y <= 470)//охладитель
             {
                 if (e.Button == MouseButtons.Left && IsShowDetails == false)
                 {
@@ -70,7 +70,7 @@ namespace Rectangle11
                     IsShowDetails = true;
                 }
             }
-            if (e.Location.X >= 354 && e.Location.Y >= 270 && e.Location.X <= 524 && e.Location.Y <= 490)//резервуар
+            if (e.Location.X >= 354 && e.Location.Y >= 300 && e.Location.X <= 524 && e.Location.Y <= 470)//резервуар
             {
                 if (e.Button == MouseButtons.Left && IsShowDetails == false)
                 {
@@ -88,40 +88,40 @@ namespace Rectangle11
             pictureBox1.Refresh();
             
 
-            if (e.Location.X >= 5 && e.Location.Y >= 270 && e.Location.X <= 180 && e.Location.Y <= 490)//машина
+            if (e.Location.X >= 5 && e.Location.Y >= 300 && e.Location.X <= 180 && e.Location.Y <= 470)//машина
             {
                 using (Graphics G = pictureBox1.CreateGraphics())
                 {
-                    G.DrawRectangle(Pens.Blue, 5, 270, 175, 220);
+                    G.DrawRectangle(Pens.Blue, 5, 300, 175, 170);
                 }                
             }
 
-            if (e.Location.X >= 181 && e.Location.Y >= 270 && e.Location.X <= 216 && e.Location.Y <= 490)//насос
+            if (e.Location.X >= 181 && e.Location.Y >= 300 && e.Location.X <= 216 && e.Location.Y <= 470)//насос
             {
                 using (Graphics G = pictureBox1.CreateGraphics())
                 {
-                    G.DrawRectangle(Pens.Blue, 181, 270, 35, 220);
+                    G.DrawRectangle(Pens.Blue, 181, 300, 35, 170);
                 }
             }
-            if (e.Location.X >= 217 && e.Location.Y >= 270 && e.Location.X <= 257 && e.Location.Y <= 490)//весы
+            if (e.Location.X >= 217 && e.Location.Y >= 300 && e.Location.X <= 257 && e.Location.Y <= 470)//весы
             {
                 using (Graphics G = pictureBox1.CreateGraphics())
                 {
-                    G.DrawRectangle(Pens.Blue, 217, 270, 40, 220);
+                    G.DrawRectangle(Pens.Blue, 217, 300, 40, 170);
                 }
             }
-            if (e.Location.X >= 258 && e.Location.Y >= 270 && e.Location.X <= 353 && e.Location.Y <= 490)//охладитель
+            if (e.Location.X >= 258 && e.Location.Y >= 300 && e.Location.X <= 353 && e.Location.Y <= 470)//охладитель
             {
                 using (Graphics G = pictureBox1.CreateGraphics())
                 {
-                    G.DrawRectangle(Pens.Blue, 258, 270, 95, 220);
+                    G.DrawRectangle(Pens.Blue, 258, 300, 95, 170);
                 }
             }
-            if (e.Location.X >= 354 && e.Location.Y >= 270 && e.Location.X <= 524 && e.Location.Y <= 490)//резервуар
+            if (e.Location.X >= 354 && e.Location.Y >= 300 && e.Location.X <= 524 && e.Location.Y <= 470)//резервуар
             {
                 using (Graphics G = pictureBox1.CreateGraphics())
                 {
-                    G.DrawRectangle(Pens.Blue, 354, 270, 169, 220);
+                    G.DrawRectangle(Pens.Blue, 354, 300, 170, 170);
                 }
             }
 
@@ -147,17 +147,6 @@ namespace Rectangle11
             Form3 newForm = new Form3();
             newForm.Show();
             
-        }
-
-        private void исходныеДанныеToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (IsShowDetails == false)
-            {
-                Form2 newForm = new Form2(this);
-                newForm.FormClosing += new FormClosingEventHandler(CloseDetails);
-                newForm.ShowPoductDetails(product);
-                IsShowDetails = true;
-            }
         }
     }
 }

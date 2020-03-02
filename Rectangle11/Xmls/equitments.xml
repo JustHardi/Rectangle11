@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <equipments>
   <equipment>
-    <type>Насос</type>
-    <name>ИПКС-017-ОНЦ-6,3/20Н(Н)</name>
-    <ImageName>nasos</ImageName>
-    <MaxPower>25000</MaxPower>
-    <MinPower>2000</MinPower>
-    <capacity>170</capacity>
-    <accuracy>0.1%</accuracy>
-    <mains_power>220</mains_power>
-  </equipment>
-  <equipment>
-    <type>Линия приёмки молока</type>
+    <type>scales</type>
     <name>CMK-2</name>
-    <ImageName>nasos</ImageName>
+    <ImageName>fasov_milk6000</ImageName>
     <MaxPower>25000</MaxPower>
     <MinPower>2000</MinPower>
     <capacity>170</capacity>
