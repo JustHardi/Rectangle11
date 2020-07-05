@@ -1,9 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <products>
-  <product type = "Milk" name="Молоко пастеризованное в плёнке 900мл" fat ="2,8">
-    <normalizedMixture name="Молоко" fat ="2,8">1010,6</normalizedMixture>
-    <milk_base fat ="3,6">782,9</milk_base>
+  <product type="Milk" name="Молоко пастеризованное в плёнке 900мл" fat="2,8">
+    <NormalizedMixture name="Молоко" fat="2,8">1010,6</NormalizedMixture>
+    <milk_base fat="3,6">782,9</milk_base>
     <milk_nofat>227,7</milk_nofat>
+    <Performance>100</Performance>
+    <Plotn>1,027</Plotn>
     <image_name>milkpacket</image_name>
-  </product>  
+  </product>
+  <product type="Milk" name="Молоко пастеризованное в плёнке 900мл" fat="3,3">
+    <NormalizedMixture name="Молоко" fat="3,3">1010,6</NormalizedMixture>
+    <milk_base fat="3,6">925,2</milk_base>
+    <milk_nofat>85,4</milk_nofat>
+    <Performance>100</Performance>
+    <Plotn>1,027</Plotn>
+    <image_name>milkpacket</image_name>
+  </product>
+  <product type="Kefir" name="Кефир в плёнке 900грамм" fat="3,2">
+    <NormalizedMixture name="Молоко" fat="3,2">1013,0</NormalizedMixture>
+    <milk_base fat="3,6">898,9</milk_base>
+    <milk_nofat>114,1</milk_nofat>
+    <Performance>30</Performance>
+    <Plotn>1,031</Plotn>
+    <image_name>kefirpacket</image_name>
+  </product>
+  <product type="Kefir" name="Кефир в ПЭТ-бутылке 900грамм" fat="2,8">
+    <NormalizedMixture name="Молоко" fat="2,8">1011,3</NormalizedMixture>
+    <milk_base fat="3,6">783,4</milk_base>
+    <milk_nofat>227,9</milk_nofat>
+    <Performance>15</Performance>
+    <Plotn>1,031</Plotn>
+    <image_name>kefirpacket</image_name>
+  </product>
+  <product type="Smetana" name="Сметана в плёнке 450грамм" fat="12">
+    <NormalizedMixture name="Сливки" fat="12">1011,1</NormalizedMixture>
+    <milk_base fat="3,6">3407</milk_base>
+    <milk_nofat>0</milk_nofat>
+    <Performance>24</Performance>
+    <Plotn>0,980</Plotn>
+    <image_name>smetanapacket</image_name>
+  </product>
+  <product type="Smetana" name="Сметана в стакане 370грамм" fat="25">
+    <NormalizedMixture name="Сливки" fat="12">1010,5</NormalizedMixture>
+    <milk_base fat="3,6">7109,1</milk_base>
+    <milk_nofat>0</milk_nofat>
+    <Performance>6</Performance>
+    <Plotn>0,980</Plotn>
+    <image_name>smetanapacket</image_name>
+  </product>
+  <product type="Tvorog" name="Творог Мягкий в пленке 100грамм" fat="10">
+    <NormalizedMixture name="Молоко" fat="3,2">3458,8</NormalizedMixture>
+    <milk_base fat="3,6">3069,1</milk_base>
+    <milk_nofat>0,0</milk_nofat>
+    <Performance>11</Performance>
+    <Plotn>1,060</Plotn>
+    <image_name>tvorogpacket</image_name>
+  </product>
+  <product type="Yogurt" name="Йогурт с фруктовым наполнителем в пленке 500грамм" fat="1,5">
+    <NormalizedMixture name="Молоко" fat="1,8">857,3</NormalizedMixture>
+    <milk_base fat="3,6">422,6</milk_base>
+    <milk_nofat>434,7</milk_nofat>
+    <Performance>10</Performance>
+    <Plotn>1,030</Plotn>
+    <image_name>yogurtpacket</image_name>
+  </product>
+  <product type="Yogurt" name="Йогурт без сахара в стакане 200грамм" fat="1,5">
+    <NormalizedMixture name="Молоко" fat="1,6">935,1</NormalizedMixture>
+    <milk_base fat="3,6">408,3</milk_base>
+    <milk_nofat>526,8</milk_nofat>
+    <Performance>10</Performance>
+    <Plotn>1,030</Plotn>
+    <image_name>yogurtpacket</image_name>
+  </product>
 </products>

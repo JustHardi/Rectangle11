@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<equipments>
+  <equipment>
+    <type>Линия приёмки молока</type>
+    <name>Sordi</name>
+    <Power>5,5</Power>
+    <Coeff>0,6</Coeff>
+    <Performance>25</Performance>
+    <W>1</W>
+    <a>1</a>
+    <ImageName>milktank</ImageName>
+  </equipment>
+  <equipment>
+    <type>Насос</type>
+    <name>ИПКС-017-ОНЦ-6,3/20Н(Н)</name>
+    <ImageName>nasos</ImageName>
+    <Performance>20,3</Performance>
+    <Pressure>2</Pressure>
+    <Power>1,5</Power>
+    <Coeff>0,6</Coeff>
+    <Temperature>не более 90</Temperature>
+    <W>3</W>
+    <a>1</a>
+  </equipment>
+  <equipment>
+    <type>Счетчик</type>
+    <name>СМК-2</name>
+    <ImageName>vesi</ImageName>
+    <Performance>23</Performance>
+    <Power>1,5</Power>
+    <Coeff>0,6</Coeff>
+    <Volume>12</Volume>
+    <Temperature>не более 90</Temperature>
+    <W>2</W>
+    <a>1</a>
+  </equipment>
+  <equipment>
+    <type>Охладитель</type>
+    <name>Пластинчатый теплообменник SIGMA 26 TCV</name>
+    <ImageName>ohladitel</ImageName>
+    <Performance>10</Performance>
+    <Power>1,5</Power>
+    <Coeff>0,6</Coeff>
+    <Temperature>18-25</Temperature>
+    <W>1</W>
+    <a>1</a>
+  </equipment>
+  <equipment>
+    <type>Резервуар для сырого молока</type>
+    <name>Sordi B2-ОXP-50</name>
+    <ImageName>rezervuar_ya1-osv-15</ImageName>
+    <Rotation>18</Rotation>
+    <Temperature>4±2</Temperature>
+    <Performance>25</Performance>
+    <Storage>не более 24 часов</Storage>
+    <Volume>15</Volume>
+    <Power>1,5</Power>
+    <Coeff>0,6</Coeff>
+    <W>2</W>
+    <a>1</a>
+  </equipment>
+  <equipment>
+    <type>Пастеризационно-охладительная установка</type>
+    <name>Пластинчатый теплообменник Westfalia VT 20 BC-10</name>
+    <ImageName>pasterizator_vt20</ImageName>
+    <Performance>10</Performance>
+    <Power>35</Power>
+    <Temperature>88±1 или 92±2</Temperature>
+    <Storage>20 сек</Storage>
+    <Coeff>0,7</Coeff>
+    <W>1</W>
+    <a>1</a>
+  </equipment>
+  <equipment>
+    <type>Сепаратор для удаления бактерий</type>
+    <name>Westfalia CND 130</name>
+    <ImageName>baktofuga_cnd130</ImageName>
+    <Performance>10</Performance>
+    <Power>11</Power>
+    <Coeff>0,6</Coeff>
+    <Temperature>55-60</Temperature>
+    <W>1</W>
+    <a>1</a>
+  </equipment>
+  <equipment>
+    <type>Сепаратор-сливкоотделитель</type>
+    <name>Westfalia MSE 85-11-1-001</name>
+    <ImageName>ohladitel</ImageName>
+    <Performance>10</Performance>
+    <Pressure>1,5</Pressure>
+    <Power>1,5</Power>
+    <Rotation>7600</Rotation>
+    <Temperature>55-60</Temperature>
+    <Coeff>0,7</Coeff>
+    <W>1</W>
+    <a>2</a>
+  </equipment>
+  <equipment>
+    <type>Нормализатор</type>
+    <name>STANDOMAT M/C</name>
+    <Performance>10</Performance>
+    <Power>1,5</Power>
+    <Coeff>0,6</Coeff>
+    <ImageName></ImageName>
+    <Temperature>60-68</Temperature>
+    <W>1</W>
+    <a>1</a>
+  </equipment>
+  <equipment>
+    <type>Гомогенизатор</type>
+    <name>Standomat M/C, Гомогенизатор H 3075</name>
+    <ImageName>homogenizator</ImageName>
+    <Performance>10</Performance>
+    <Pressure>15,0±2,5/150±25</Pressure>
+    <Power>37</Power>
+    <Coeff>0,7</Coeff>
+    <Temperature>60-68</Temperature>
+    <W>1</W>
+    <a>3</a>
+  </equipment>
+  <equipment>
+    <type>Выдерживатель</type>
+    <name>Sordi Я1-ОСВ-10</name>
+    <ImageName>rezervuar_ya1-osv-15</ImageName>
+    <Performance>25</Performance>
+    <Pressure>1,5</Pressure>
+    <Storage>8-12 часов</Storage>
+    <Volume>10</Volume>
+    <Power>1,5</Power>
+    <Coeff>0,6</Coeff>
+    <Rotation>7600</Rotation>
+    <Temperature>92±2</Temperature>
+    <W>2</W>
+    <a>3</a>
+  </equipment>
+  <equipment>
+    <type>Резервуар для кисломолочных продуктов</type>
+    <name>Sordi Я1-ОСВ-10</name>
+    <ImageName>rezervuar_ya1-osv-15</ImageName>
+    <Rotation>1800</Rotation>
+    <Temperature>20±2</Temperature>
+    <Performance>25</Performance>
+    <Storage>10-30 мин</Storage>
+    <Volume>10</Volume>
+    <Power>1,5</Power>
+    <Coeff>0,6</Coeff>
+    <W>2</W>
+    <a>3</a>
+  </equipment>
+  <equipment>
+    <type>Насос для перекачки продукта</type>
+    <name>HM-02</name>
+    <ImageName>nasos</ImageName>
+    <Performance>20,3</Performance>
+    <Pressure>2</Pressure>
+    <Power>1,5</Power>
+    <Coeff>0,6</Coeff>
+    <Temperature>не более 90</Temperature>
+    <W>3</W>
+    <a>3</a>
+  </equipment>
+  <equipment>
+    <type>Фасовочный автомат</type>
+    <name>Galdi RG 250 UCS</name>
+    <Performance>1,5</Performance>
+    <Power>2,1</Power>
+    <Coeff>0,6</Coeff>
+    <ImageName>fasov_galdi_rg250</ImageName>
+    <W>1</W>
+    <a>3</a>
+  </equipment>
+</equipments>

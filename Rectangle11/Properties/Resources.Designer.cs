@@ -59,5 +59,15 @@ namespace Rectangle11.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap menu_list512_1 {
+            get {
+                object obj = ResourceManager.GetObject("menu_list512-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

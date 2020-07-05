@@ -11,8 +11,7 @@ namespace Rectangle11
     {
         public string Type { get; set; }
         public string Name { get; set; }
-        public virtual double Volume { get; set; } = 0; //V - рабочий объем танка или емкости, м3
-        public virtual double Plotn { get; set; } = 0; //Ro - плотность продукта, т/м3        
+        public virtual double Volume { get; set; } = 0; //V - рабочий объем танка или емкости, м3               
         public virtual double Mass { get; set; } = 0; //m - масса продукта обрабатываемого за один цикл, т
         public virtual double Power { get; set; } = 0; //Рн - Номинальная мощность электродвигателя кВт 
         public virtual double Coeff { get; set; } = 0; //Ки - коэффициент использования мощности электродвигателей 
@@ -23,16 +22,16 @@ namespace Rectangle11
         public string Pressure { get; set; } //Давление МПа/бар
         public virtual double Performance { get; set; } = 0; //М - производительность оборудования по обрабатываемому сырью или готовому продукту, т/ч
         //W - Удельный расход электроэнергии на производство продукции на рабочих машинах,аппаратах,установках непрерывного действия
-        public virtual double W { get; set; } = 0; 
+        public virtual double W { get; set; } = 0;
+        public XmlDocument Xml { get; set; }
+        public int XmlIndex { get; set; }
 
         public string ImageName { get; set; } = "notfound";
-            
+
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            Mass = Volume + Plotn;
-
-            W = (Power * 0.6) / Performance;
+            
 
             if (!string.IsNullOrEmpty(Type))
             {
@@ -45,10 +44,6 @@ namespace Rectangle11
             if (Volume != 0)
             {
                 sb.AppendLine("Объём: " + Volume + " м³");
-            }
-            if (Plotn != 0)
-            {
-                sb.AppendLine("Плотность: " + Plotn + " тонн/м³");
             }
             if (Power != 0)
             {
@@ -82,18 +77,6 @@ namespace Rectangle11
             {
                 sb.AppendLine("Производительность оборудования по обрабатываемому сырью или готовому продукту: " + Performance + " тонн/час");
             }
-
-            if (Volume != 0 && Plotn != 0)
-            {
-                sb.AppendLine("Масса продукта обрабатываемого за 1 цикл: " + Mass + " тонн");
-            }
-            if (Power != 0 && Performance != 0)
-            {
-                sb.AppendLine();
-                sb.AppendLine("Удельный расход электроэнергии на производство продукции W = " + W + " кВт*ч/т");
-            }
-
-
 
             return sb.ToString();
         }
